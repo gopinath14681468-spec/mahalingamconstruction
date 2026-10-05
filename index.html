@@ -7,13 +7,13 @@
     <title>Mahalingam Construction | Coimbatore</title>
 
     <meta name="description"
-        content="Mahalingam Construction - House construction, villa construction, renovation and building extension services in Coimbatore. 20+ years of practical construction experience.">
+          content="Mahalingam Construction - Individual house construction, villa construction, renovation and building extension services in Coimbatore.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
 
     <style>
 
@@ -29,70 +29,86 @@
 
         body {
             font-family: "DM Sans", sans-serif;
-            background: #0b0b0b;
-            color: #ffffff;
+            background: #080b10;
+            color: #f5f5f5;
             line-height: 1.7;
         }
 
         :root {
-            --gold: #c9a227;
-            --gold-light: #e3c65c;
-            --black: #080808;
-            --dark: #111111;
-            --dark-2: #171717;
-            --white: #ffffff;
-            --gray: #b7b7b7;
+            --gold: #d4af37;
+            --gold-light: #f0cc55;
+            --navy: #080b10;
+            --navy-light: #101722;
+            --card: #111823;
+            --text: #f5f5f5;
+            --muted: #aab2bf;
+            --border: rgba(212, 175, 55, 0.22);
         }
 
-        /* ================= NAVIGATION ================= */
+        /* =========================
+           HEADER
+        ========================== */
 
         header {
-            position: fixed;
+            position: sticky;
             top: 0;
-            left: 0;
-            width: 100%;
             z-index: 1000;
-            background: rgba(8, 8, 8, 0.95);
-            backdrop-filter: blur(15px);
-            border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+            background: rgba(8, 11, 16, 0.94);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
 
-        .nav {
-            max-width: 1200px;
+        .navbar {
+            max-width: 1250px;
             margin: auto;
-            padding: 17px 25px;
+            padding: 14px 25px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 30px;
         }
 
-        .logo {
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
             text-decoration: none;
-            color: var(--gold-light);
-            font-family: "Playfair Display", serif;
-            font-size: 25px;
-            font-weight: 700;
+            color: white;
         }
 
-        .logo span {
+        .brand img {
+            width: 68px;
+            height: 68px;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .brand-text h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 21px;
+            color: var(--gold-light);
+            letter-spacing: 0.5px;
+        }
+
+        .brand-text span {
             display: block;
-            font-family: "DM Sans", sans-serif;
-            font-size: 9px;
-            letter-spacing: 3px;
-            color: #999;
+            color: #b7bec8;
+            font-size: 11px;
+            letter-spacing: 2px;
             text-transform: uppercase;
         }
 
-        nav ul {
+        nav {
             display: flex;
-            list-style: none;
+            align-items: center;
             gap: 28px;
         }
 
         nav a {
-            color: #fff;
+            color: #e8e8e8;
             text-decoration: none;
             font-size: 14px;
+            font-weight: 500;
             transition: 0.3s;
         }
 
@@ -100,26 +116,32 @@
             color: var(--gold-light);
         }
 
-        /* ================= HERO ================= */
+        .nav-button {
+            background: var(--gold);
+            color: #080b10 !important;
+            padding: 11px 18px;
+            border-radius: 6px;
+            font-weight: 700 !important;
+        }
+
+        .nav-button:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           HERO
+        ========================== */
 
         .hero {
-            min-height: 100vh;
+            min-height: 88vh;
             display: flex;
             align-items: center;
             position: relative;
             overflow: hidden;
-
             background:
-                linear-gradient(
-                    rgba(0,0,0,0.68),
-                    rgba(0,0,0,0.9)
-                ),
-                radial-gradient(
-                    circle at 75% 40%,
-                    rgba(201,162,39,0.22),
-                    transparent 35%
-                ),
-                #080808;
+                radial-gradient(circle at 80% 20%, rgba(212,175,55,0.13), transparent 30%),
+                linear-gradient(135deg, #080b10 0%, #0d131d 100%);
         }
 
         .hero::before {
@@ -127,36 +149,44 @@
             position: absolute;
             width: 500px;
             height: 500px;
-            right: -180px;
-            top: 100px;
-            border: 1px solid rgba(201,162,39,0.25);
+            border: 1px solid rgba(212,175,55,0.12);
             border-radius: 50%;
+            right: -180px;
+            top: -100px;
         }
 
-        .hero-content {
+        .hero-container {
             max-width: 1200px;
             width: 100%;
             margin: auto;
-            padding: 150px 25px 100px;
-            position: relative;
-            z-index: 2;
+            padding: 80px 25px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 70px;
         }
 
-        .small-title {
+        .hero-logo {
+            width: 210px;
+            max-width: 70%;
+            margin-bottom: 25px;
+            filter: drop-shadow(0 15px 35px rgba(0,0,0,0.5));
+        }
+
+        .hero small {
             color: var(--gold-light);
             text-transform: uppercase;
             letter-spacing: 4px;
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: 700;
         }
 
         .hero h1 {
             font-family: "Playfair Display", serif;
-            font-size: clamp(48px, 7vw, 82px);
+            font-size: clamp(48px, 6vw, 76px);
             line-height: 1.05;
-            max-width: 850px;
-            margin-bottom: 25px;
+            margin: 18px 0;
+            max-width: 700px;
         }
 
         .hero h1 span {
@@ -164,30 +194,30 @@
         }
 
         .hero p {
-            max-width: 700px;
-            color: #c8c8c8;
+            color: var(--muted);
+            max-width: 620px;
             font-size: 18px;
-            margin-bottom: 35px;
         }
 
-        .buttons {
+        .hero-buttons {
             display: flex;
             gap: 15px;
+            margin-top: 35px;
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
-            padding: 14px 28px;
-            border-radius: 4px;
+            padding: 14px 25px;
+            border-radius: 6px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             transition: 0.3s;
         }
 
         .btn-gold {
             background: var(--gold);
-            color: #000;
+            color: #080b10;
         }
 
         .btn-gold:hover {
@@ -196,7 +226,7 @@
         }
 
         .btn-outline {
-            border: 1px solid rgba(255,255,255,0.35);
+            border: 1px solid rgba(255,255,255,0.3);
             color: white;
         }
 
@@ -206,7 +236,43 @@
             transform: translateY(-3px);
         }
 
-        /* ================= COMMON ================= */
+        .hero-card {
+            background: rgba(17,24,35,0.82);
+            border: 1px solid var(--border);
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.35);
+        }
+
+        .hero-card h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .hero-card-item {
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .hero-card-item:last-child {
+            border-bottom: none;
+        }
+
+        .hero-card-item strong {
+            display: block;
+            color: var(--gold-light);
+            font-size: 15px;
+        }
+
+        .hero-card-item span {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* =========================
+           GENERAL
+        ========================== */
 
         section {
             padding: 100px 25px;
@@ -217,421 +283,368 @@
             margin: auto;
         }
 
-        .section-label {
+        .section-heading {
+            max-width: 750px;
+            margin-bottom: 55px;
+        }
+
+        .section-heading small {
             color: var(--gold-light);
             text-transform: uppercase;
             letter-spacing: 3px;
             font-size: 12px;
             font-weight: 700;
-            margin-bottom: 12px;
         }
 
-        .section-title {
+        .section-heading h2 {
             font-family: "Playfair Display", serif;
             font-size: clamp(35px, 5vw, 52px);
-            line-height: 1.2;
-            margin-bottom: 20px;
+            margin: 12px 0;
         }
 
-        .section-description {
-            color: var(--gray);
-            max-width: 750px;
+        .section-heading p {
+            color: var(--muted);
         }
 
-        /* ================= ABOUT ================= */
+        /* =========================
+           ABOUT
+        ========================== */
 
         .about {
-            background: #111;
+            background: #0b1017;
         }
 
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 70px;
-            align-items: center;
+            gap: 60px;
+            align-items: start;
         }
 
-        .about-text p {
-            color: #bcbcbc;
+        .about-content p {
+            color: var(--muted);
             margin-bottom: 18px;
         }
 
         .highlight {
-            border-left: 3px solid var(--gold);
-            padding: 20px 25px;
-            background: #171717;
-            margin: 28px 0;
-        }
-
-        .highlight strong {
-            display: block;
             color: var(--gold-light);
-            font-size: 28px;
+            font-weight: 700;
         }
 
-        .experience-card {
-            min-height: 430px;
-            padding: 45px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-
-            background:
-                linear-gradient(
-                    rgba(0,0,0,0.25),
-                    rgba(0,0,0,0.9)
-                ),
-                linear-gradient(
-                    135deg,
-                    #333,
-                    #151515,
-                    #252525
-                );
-
-            border: 1px solid rgba(201,162,39,0.25);
+        .experience-box {
+            background: linear-gradient(145deg, #121a26, #0d131d);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 35px;
         }
 
-        .experience-card h3 {
+        .experience-number {
             font-family: "Playfair Display", serif;
-            font-size: 34px;
-            color: var(--gold-light);
-            line-height: 1.2;
-            margin-bottom: 15px;
+            font-size: 70px;
+            color: var(--gold);
+            line-height: 1;
         }
 
-        .experience-card p {
-            color: #aaa;
+        .experience-box h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 26px;
+            margin: 15px 0;
         }
 
-        /* ================= TEAM ================= */
-
-        .team {
-            background: #080808;
+        .experience-box p {
+            color: var(--muted);
         }
+
+        /* =========================
+           TEAM
+        ========================== */
 
         .team-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
-            margin-top: 50px;
         }
 
         .team-card {
-            background: #171717;
-            padding: 35px;
-            border: 1px solid #292929;
+            background: var(--card);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 15px;
+            padding: 32px;
             transition: 0.3s;
         }
 
         .team-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--gold);
+            transform: translateY(-6px);
+            border-color: var(--border);
         }
 
-        .number {
-            color: var(--gold);
-            font-size: 12px;
-            letter-spacing: 2px;
+        .team-card .role {
+            color: var(--gold-light);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
         }
 
         .team-card h3 {
             font-family: "Playfair Display", serif;
-            font-size: 28px;
-            margin: 10px 0;
-        }
-
-        .team-card h4 {
-            color: var(--gold-light);
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        .team-card p {
-            color: var(--gray);
+            font-size: 27px;
+            margin: 8px 0 18px;
         }
 
         .team-card ul {
-            margin-top: 20px;
-            padding-left: 18px;
-            color: #c5c5c5;
+            list-style: none;
         }
 
-        /* ================= SERVICES ================= */
-
-        .services {
-            background: #111;
+        .team-card li {
+            color: var(--muted);
+            margin: 10px 0;
         }
 
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-            margin-top: 45px;
+        .team-card li::before {
+            content: "✓";
+            color: var(--gold);
+            font-weight: bold;
+            margin-right: 10px;
         }
 
-        .service {
-            background: #181818;
-            padding: 30px 22px;
-            border-top: 2px solid #292929;
-            transition: 0.3s;
-        }
-
-        .service:hover {
-            border-top-color: var(--gold);
-            transform: translateY(-5px);
-        }
-
-        .service-icon {
-            font-size: 30px;
-            margin-bottom: 18px;
-        }
-
-        .service h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .service p {
-            color: #999;
-            font-size: 14px;
-        }
-
-        /* ================= PROJECTS ================= */
+        /* =========================
+           PROJECTS
+        ========================== */
 
         .projects {
-            background: #080808;
+            background: #0b1017;
         }
 
         .project-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 22px;
-            margin-top: 45px;
         }
 
-        .project {
-            background: #171717;
-            border: 1px solid #262626;
-            overflow: hidden;
+        .project-card {
+            background: #111823;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 15px;
+            padding: 30px;
             transition: 0.3s;
         }
 
-        .project:hover {
-            transform: translateY(-5px);
-            border-color: rgba(201,162,39,0.6);
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--border);
         }
 
-        .project-top {
-            height: 180px;
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(201,162,39,0.3),
-                    rgba(0,0,0,0.7)
-                ),
-                #292929;
-
-            display: flex;
-            align-items: flex-end;
-            padding: 25px;
-        }
-
-        .project-top span {
-            color: var(--gold-light);
-            font-size: 12px;
+        .project-number {
+            color: var(--gold);
+            font-size: 13px;
+            font-weight: 700;
             letter-spacing: 2px;
-            text-transform: uppercase;
         }
 
-        .project-content {
-            padding: 25px;
-        }
-
-        .project h3 {
+        .project-card h3 {
             font-family: "Playfair Display", serif;
-            font-size: 24px;
-            margin-bottom: 8px;
+            font-size: 25px;
+            margin: 12px 0;
         }
 
-        .project p {
-            color: #999;
-            font-size: 14px;
+        .project-card p {
+            color: var(--muted);
         }
 
-        /* ================= PRICING ================= */
-
-        .pricing {
-            background: #111;
-        }
+        /* =========================
+           PRICING
+        ========================== */
 
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
-            margin-top: 45px;
         }
 
         .price-card {
-            padding: 45px;
-            background: #181818;
-            border: 1px solid #292929;
+            position: relative;
+            background: linear-gradient(145deg, #151d29, #0d131d);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 40px;
+            overflow: hidden;
         }
 
-        .price-card.featured {
-            border-color: var(--gold);
+        .price-card::after {
+            content: "₹";
+            position: absolute;
+            right: -10px;
+            bottom: -45px;
+            font-size: 180px;
+            color: rgba(212,175,55,0.035);
+            font-family: "Playfair Display", serif;
         }
 
         .price-card h3 {
             font-family: "Playfair Display", serif;
-            font-size: 28px;
+            font-size: 30px;
         }
 
         .price {
-            font-size: 42px;
-            font-weight: 700;
             color: var(--gold-light);
-            margin: 20px 0;
-        }
-
-        .price small {
-            font-size: 15px;
-            color: #aaa;
-            font-weight: 400;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 18px 0 5px;
         }
 
         .price-card p {
-            color: #999;
+            color: var(--muted);
         }
 
-        /* ================= CONTACT ================= */
-
-        .contact {
-            background: #050505;
+        .pricing-note {
+            margin-top: 30px;
+            color: #8993a1;
+            font-size: 13px;
             text-align: center;
         }
 
-        .contact-box {
-            max-width: 900px;
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact {
+            background:
+                radial-gradient(circle at center, rgba(212,175,55,0.08), transparent 45%),
+                #080b10;
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 850px;
             margin: auto;
         }
 
         .contact h2 {
             font-family: "Playfair Display", serif;
-            font-size: clamp(38px, 6vw, 60px);
-            line-height: 1.2;
-            margin-bottom: 20px;
+            font-size: clamp(38px, 5vw, 58px);
         }
 
-        .contact > .container p {
-            color: #aaa;
+        .contact p {
+            color: var(--muted);
+            margin: 18px auto 35px;
         }
 
         .contact-buttons {
-            margin: 35px 0;
             display: flex;
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
         }
 
-        .contact-details {
-            margin-top: 35px;
-            color: #aaa;
+        .contact-info {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+            flex-wrap: wrap;
+            color: var(--muted);
         }
 
-        .contact-details p {
-            margin: 12px 0;
-        }
-
-        .contact-details strong {
+        .contact-info strong {
             color: var(--gold-light);
         }
 
-        /* ================= FOOTER ================= */
+        /* =========================
+           FOOTER
+        ========================== */
 
         footer {
-            background: #030303;
-            border-top: 1px solid #222;
-            padding: 35px 25px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 30px 25px;
+            background: #06080c;
             text-align: center;
         }
 
-        footer h3 {
-            font-family: "Playfair Display", serif;
-            color: var(--gold-light);
-            margin-bottom: 8px;
+        footer img {
+            width: 90px;
+            margin-bottom: 12px;
         }
 
         footer p {
-            color: #777;
+            color: #7f8997;
             font-size: 13px;
         }
 
-        /* ================= MOBILE ================= */
+        /* =========================
+           MOBILE
+        ========================== */
 
         @media (max-width: 900px) {
 
-            nav ul {
-                gap: 15px;
+            nav {
+                display: none;
             }
 
-            .about-grid,
-            .team-grid,
-            .pricing-grid {
+            .hero-container {
                 grid-template-columns: 1fr;
+                gap: 45px;
             }
 
-            .service-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .about-grid {
+                grid-template-columns: 1fr;
             }
 
             .project-grid {
                 grid-template-columns: 1fr;
             }
+
         }
 
         @media (max-width: 650px) {
 
-            .nav {
-                padding: 15px 18px;
+            .navbar {
+                padding: 12px 18px;
             }
 
-            nav ul {
-                display: none;
+            .brand img {
+                width: 55px;
+                height: 55px;
+            }
+
+            .brand-text h2 {
+                font-size: 17px;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-container {
+                padding: 70px 20px;
+            }
+
+            .hero-logo {
+                width: 160px;
             }
 
             section {
                 padding: 75px 20px;
             }
 
-            .hero-content {
-                padding: 130px 20px 80px;
-            }
-
-            .hero h1 {
-                font-size: 48px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            .service-grid {
+            .team-grid,
+            .pricing-grid {
                 grid-template-columns: 1fr;
             }
 
-            .experience-card {
-                min-height: 320px;
-                padding: 30px;
+            .hero-buttons,
+            .contact-buttons {
+                flex-direction: column;
             }
 
-            .price-card {
-                padding: 30px;
-            }
-
-            .contact-buttons .btn {
-                width: 100%;
+            .btn {
                 text-align: center;
+                width: 100%;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
             }
         }
 
@@ -640,35 +653,32 @@
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
+<!-- =========================
+     HEADER
+========================== -->
 
 <header>
 
-    <div class="nav">
+    <div class="navbar">
 
-        <a href="#home" class="logo">
-            Mahalingam Construction
-            <span>Building With Experience</span>
+        <a href="#home" class="brand">
+
+            <img src="Logo.png"
+                 alt="Mahalingam Construction Logo">
+
+            <div class="brand-text">
+                <h2>Mahalingam Construction</h2>
+                <span>Building With Experience</span>
+            </div>
+
         </a>
 
         <nav>
-
-            <ul>
-
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#about">About Us</a></li>
-
-                <li><a href="#services">Services</a></li>
-
-                <li><a href="#projects">Projects</a></li>
-
-                <li><a href="#pricing">Pricing</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#pricing">Services</a>
+            <a href="#contact" class="nav-button">Contact Us</a>
         </nav>
 
     </div>
@@ -676,37 +686,75 @@
 </header>
 
 
-<!-- ================= HOME ================= -->
+<!-- =========================
+     HOME
+========================== -->
 
 <section class="hero" id="home">
 
-    <div class="hero-content">
+    <div class="hero-container">
 
-        <div class="small-title">
-            Coimbatore • Tamil Nadu
+        <div>
+
+            <img src="Logo.png"
+                 alt="Mahalingam Construction"
+                 class="hero-logo">
+
+            <small>Coimbatore • Tamil Nadu</small>
+
+            <h1>
+                Building Your
+                <span>Dreams</span>
+                With Experience.
+            </h1>
+
+            <p>
+                Trusted construction services for individual homes,
+                villas, renovations and building extensions —
+                backed by more than 20 years of practical experience.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="tel:+919659655906"
+                   class="btn btn-gold">
+                    📞 Call Us
+                </a>
+
+                <a href="https://wa.me/919659655906?text=Hello%20Mahalingam%20Construction%2C%20I%20would%20like%20to%20discuss%20a%20construction%20project."
+                   target="_blank"
+                   class="btn btn-outline">
+                    WhatsApp Us
+                </a>
+
+            </div>
+
         </div>
 
-        <h1>
-            Building Spaces.<br>
-            <span>Building Trust.</span>
-        </h1>
 
-        <p>
-            Quality house construction, villa construction,
-            renovation and building extension services backed
-            by more than 20 years of practical construction
-            experience.
-        </p>
+        <div class="hero-card">
 
-        <div class="buttons">
+            <h3>Why Choose Us?</h3>
 
-            <a href="#contact" class="btn btn-gold">
-                Get a Consultation
-            </a>
+            <div class="hero-card-item">
+                <strong>20+ Years Experience</strong>
+                <span>Practical, hands-on construction expertise.</span>
+            </div>
 
-            <a href="#projects" class="btn btn-outline">
-                View Our Projects
-            </a>
+            <div class="hero-card-item">
+                <strong>Father–Son Team</strong>
+                <span>Technical experience combined with client coordination.</span>
+            </div>
+
+            <div class="hero-card-item">
+                <strong>Quality-Focused Work</strong>
+                <span>Careful planning, materials and execution.</span>
+            </div>
+
+            <div class="hero-card-item">
+                <strong>Personal Attention</strong>
+                <span>Direct communication throughout your project.</span>
+            </div>
 
         </div>
 
@@ -715,69 +763,79 @@
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- =========================
+     ABOUT
+========================== -->
 
 <section class="about" id="about">
 
     <div class="container">
 
+        <div class="section-heading">
+
+            <small>About Mahalingam Construction</small>
+
+            <h2>
+                Experience That Builds Confidence.
+            </h2>
+
+            <p>
+                A practical, personal approach to building homes
+                and spaces that last.
+            </p>
+
+        </div>
+
+
         <div class="about-grid">
 
-            <div class="about-text">
-
-                <div class="section-label">
-                    About Mahalingam Construction
-                </div>
-
-                <h2 class="section-title">
-                    Experience That Builds Confidence
-                </h2>
+            <div class="about-content">
 
                 <p>
                     <strong>Mahalingam Construction</strong> is a
-                    Coimbatore-based construction service focused
-                    on individual house construction, villa
-                    construction, renovation and building
-                    extension projects.
+                    Coimbatore-based construction service focused on
+                    <span class="highlight">
+                        individual house construction, villa construction,
+                        renovation and building extension projects.
+                    </span>
                 </p>
 
                 <p>
                     Our foundation is built on
-                    <strong>20+ years of practical,
-                    hands-on construction experience.</strong>
+                    <span class="highlight">
+                        20+ years of practical, hands-on construction experience.
+                    </span>
                 </p>
 
-                <div class="highlight">
-
-                    <strong>20+ Years</strong>
-
-                    Practical Construction Experience
-
-                </div>
+                <p>
+                    We believe that every home requires careful planning,
+                    quality workmanship and direct communication with the
+                    customer from the beginning of the project until completion.
+                </p>
 
                 <p>
-                    We believe that a good home is not just about
-                    walls and roofs. It is about planning, quality,
-                    trust and attention to every detail.
+                    Our aim is simple:
+                    <strong>to build quality spaces with honest guidance,
+                    practical decisions and reliable execution.</strong>
                 </p>
 
             </div>
 
 
-            <div class="experience-card">
+            <div class="experience-box">
 
-                <div class="section-label">
-                    Our Foundation
+                <div class="experience-number">
+                    20+
                 </div>
 
                 <h3>
-                    Built on Experience.
-                    Driven by Trust.
+                    Years of Construction Experience
                 </h3>
 
                 <p>
-                    From planning to execution, we focus on
-                    practical solutions and quality workmanship.
+                    Practical site knowledge, construction execution,
+                    planning and quality-focused workmanship passed
+                    through years of experience.
                 </p>
 
             </div>
@@ -789,56 +847,58 @@
 </section>
 
 
-<!-- ================= TEAM ================= -->
+<!-- =========================
+     TEAM
+========================== -->
 
-<section class="team">
+<section>
 
     <div class="container">
 
-        <div class="section-label">
-            Our Team
+        <div class="section-heading">
+
+            <small>Our Team</small>
+
+            <h2>
+                A Father–Son Team Built on Experience.
+            </h2>
+
+            <p>
+                Combining construction expertise with dedicated
+                customer coordination.
+            </p>
+
         </div>
-
-        <h2 class="section-title">
-            A Father–Son Team
-        </h2>
-
-        <p class="section-description">
-            Combining decades of construction knowledge with
-            modern customer coordination to provide a smooth
-            construction experience.
-        </p>
 
 
         <div class="team-grid">
 
             <div class="team-card">
 
-                <div class="number">
-                    01 — TECHNICAL
+                <div class="role">
+                    Technical Head • Mestri
                 </div>
 
                 <h3>
                     Mahalingam M
                 </h3>
 
-                <h4>
-                    Technical Head (Mestri)
-                </h4>
-
-                <p>
-                    With over 20 years of hands-on construction
-                    experience, Mahalingam personally handles
-                    the technical aspects of construction.
-                </p>
-
                 <ul>
+
+                    <li>20+ years of practical construction experience</li>
+
                     <li>Overall construction supervision</li>
+
                     <li>Vastu consultation</li>
+
                     <li>Blueprint planning</li>
+
                     <li>Construction execution</li>
+
                     <li>Practical site decisions</li>
+
                     <li>Quality-focused workmanship</li>
+
                 </ul>
 
             </div>
@@ -846,31 +906,30 @@
 
             <div class="team-card">
 
-                <div class="number">
-                    02 — CLIENT RELATIONS
+                <div class="role">
+                    Project Executive & Client Relations
                 </div>
 
                 <h3>
                     Gopinath M
                 </h3>
 
-                <h4>
-                    Project Executive & Client Relations
-                </h4>
-
-                <p>
-                    Gopinath M, son of Mahalingam, works alongside
-                    his father and coordinates directly with
-                    customers throughout the project.
+                <p style="color:#aab2bf; margin-bottom:15px;">
+                    Son of Mahalingam
                 </p>
 
                 <ul>
+
                     <li>Site coordination</li>
+
                     <li>Customer support</li>
+
                     <li>Material and brand guidance</li>
-                    <li>Project planning</li>
-                    <li>Client communication</li>
-                    <li>Project coordination</li>
+
+                    <li>Project planning and coordination</li>
+
+                    <li>Regular client communication</li>
+
                 </ul>
 
             </div>
@@ -882,200 +941,87 @@
 </section>
 
 
-<!-- ================= SERVICES ================= -->
-
-<section class="services" id="services">
-
-    <div class="container">
-
-        <div class="section-label">
-            What We Do
-        </div>
-
-        <h2 class="section-title">
-            Construction Services
-        </h2>
-
-        <p class="section-description">
-            Practical construction solutions for homes and
-            commercial spaces.
-        </p>
-
-
-        <div class="service-grid">
-
-            <div class="service">
-
-                <div class="service-icon">🏠</div>
-
-                <h3>
-                    House Construction
-                </h3>
-
-                <p>
-                    Complete individual house construction
-                    from planning to execution.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <div class="service-icon">🏢</div>
-
-                <h3>
-                    Villa Construction
-                </h3>
-
-                <p>
-                    Quality-focused villa construction
-                    tailored to your requirements.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <div class="service-icon">🔨</div>
-
-                <h3>
-                    Renovation
-                </h3>
-
-                <p>
-                    Renovation and improvement work for
-                    existing residential properties.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <div class="service-icon">🏗️</div>
-
-                <h3>
-                    Building Extension
-                </h3>
-
-                <p>
-                    First-floor, second-floor and building
-                    extension projects.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
+<!-- =========================
+     PROJECTS
+========================== -->
 
 <section class="projects" id="projects">
 
     <div class="container">
 
-        <div class="section-label">
-            Selected Work
+        <div class="section-heading">
+
+            <small>Ongoing Projects</small>
+
+            <h2>
+                Projects We Are Building.
+            </h2>
+
+            <p>
+                Practical construction executed with attention to
+                structure, materials and customer requirements.
+            </p>
+
         </div>
-
-        <h2 class="section-title">
-            Ongoing Projects
-        </h2>
-
-        <p class="section-description">
-            A selection of our current residential construction
-            projects.
-        </p>
 
 
         <div class="project-grid">
 
 
-            <div class="project">
+            <div class="project-card">
 
-                <div class="project-top">
-
-                    <span>
-                        Residential
-                    </span>
-
+                <div class="project-number">
+                    PROJECT 01
                 </div>
 
-                <div class="project-content">
+                <h3>
+                    3 BHK – Ondipudur
+                </h3>
 
-                    <h3>
-                        3 BHK – Ondipudur
-                    </h3>
-
-                    <p>
-                        3 BHK residential project with
-                        Sengal Brick Construction.
-                    </p>
-
-                </div>
+                <p>
+                    3 BHK residential project with
+                    <strong>Sengal Brick Construction</strong>.
+                </p>
 
             </div>
 
 
-            <div class="project">
+            <div class="project-card">
 
-                <div class="project-top">
-
-                    <span>
-                        Residential
-                    </span>
-
+                <div class="project-number">
+                    PROJECT 02
                 </div>
 
-                <div class="project-content">
+                <h3>
+                    3 BHK – Mahalakshmi Garden
+                </h3>
 
-                    <h3>
-                        3 BHK – Mahalakshmi Garden
-                    </h3>
-
-                    <p>
-                        1800 sq.ft residential project at
-                        Peedampalli using Hollow Block
-                        Construction.
-                    </p>
-
-                </div>
+                <p>
+                    Peedampalli residential project covering
+                    <strong>1,800 sq.ft.</strong>
+                    with Hollow Block Construction.
+                </p>
 
             </div>
 
 
-            <div class="project">
+            <div class="project-card">
 
-                <div class="project-top">
-
-                    <span>
-                        Building Extension
-                    </span>
-
+                <div class="project-number">
+                    PROJECT 03
                 </div>
 
-                <div class="project-content">
+                <h3>
+                    Ramanathapuram
+                </h3>
 
-                    <h3>
-                        Ramanathapuram
-                    </h3>
-
-                    <p>
-                        Existing ground floor with 1 BHK on
-                        the first floor and bedroom with
-                        attached bathroom on the second floor.
-                    </p>
-
-                </div>
+                <p>
+                    Building extension project with an existing
+                    Ground Floor, a <strong>1 BHK First Floor</strong>
+                    and a <strong>Second Floor Bedroom with Attached Bathroom</strong>.
+                </p>
 
             </div>
-
 
         </div>
 
@@ -1084,44 +1030,45 @@
 </section>
 
 
-<!-- ================= PRICING ================= -->
+<!-- =========================
+     PRICING
+========================== -->
 
-<section class="pricing" id="pricing">
+<section id="pricing">
 
     <div class="container">
 
-        <div class="section-label">
-            Construction Cost
+        <div class="section-heading">
+
+            <small>Construction Services</small>
+
+            <h2>
+                Build With Clarity.
+            </h2>
+
+            <p>
+                Transparent starting prices with specifications
+                tailored to your project.
+            </p>
+
         </div>
-
-        <h2 class="section-title">
-            Transparent Starting Prices
-        </h2>
-
-        <p class="section-description">
-            Our construction pricing starts from the following
-            rates depending on design, specifications and site
-            requirements.
-        </p>
 
 
         <div class="pricing-grid">
 
 
-            <div class="price-card featured">
+            <div class="price-card">
 
                 <h3>
                     House Construction
                 </h3>
 
                 <div class="price">
-                    ₹2,300
-                    <small>/ sq.ft.</small>
+                    ₹2,300 / sq.ft.
                 </div>
 
                 <p>
-                    Starting price for residential house
-                    construction.
+                    Starting price for individual house construction.
                 </p>
 
             </div>
@@ -1130,12 +1077,11 @@
             <div class="price-card">
 
                 <h3>
-                    Shop / Commercial
+                    Shop / Commercial Building
                 </h3>
 
                 <div class="price">
-                    ₹2,000
-                    <small>/ sq.ft.</small>
+                    ₹2,000 / sq.ft.
                 </div>
 
                 <p>
@@ -1145,12 +1091,12 @@
 
             </div>
 
-
         </div>
 
-        <p style="margin-top:25px;color:#777;font-size:13px;">
 
-            * Construction cost may vary depending on design,
+        <p class="pricing-note">
+
+            Construction cost may vary depending on design,
             specifications, materials, site conditions and
             customer requirements.
 
@@ -1161,26 +1107,34 @@
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- =========================
+     CONTACT
+========================== -->
 
 <section class="contact" id="contact">
 
     <div class="container">
 
-        <div class="contact-box">
+        <div class="contact-content">
 
-            <div class="section-label">
+            <small style="
+                color:#f0cc55;
+                text-transform:uppercase;
+                letter-spacing:3px;
+                font-weight:700;">
                 Start Your Project
-            </div>
+            </small>
 
             <h2>
-                Let's Build Your Dream Home
+                Let's Build Something
+                <span style="color:#d4af37;">
+                    Meaningful.
+                </span>
             </h2>
 
             <p>
-                Planning a new home, villa, renovation or
-                building extension? Talk to us about your
-                requirements.
+                Planning a new home, villa, renovation or building
+                extension? Talk to us about your requirements.
             </p>
 
 
@@ -1188,37 +1142,39 @@
 
                 <!-- CALL BUTTON -->
 
-                <a id="callButton"
-                   class="btn btn-gold"
-                   href="#">
+                <a href="tel:+919659655906"
+                   class="btn btn-gold">
                     📞 Call Us
                 </a>
 
 
                 <!-- WHATSAPP BUTTON -->
 
-                <a id="whatsappButton"
-                   class="btn btn-outline"
-                   href="#"
-                   target="_blank">
+                <a href="https://wa.me/919659655906?text=Hello%20Mahalingam%20Construction%2C%20I%20would%20like%20to%20discuss%20a%20construction%20project."
+                   target="_blank"
+                   class="btn btn-outline">
                     💬 WhatsApp Us
                 </a>
 
             </div>
 
 
-            <div class="contact-details">
+            <div class="contact-info">
 
-                <p>
-                    <strong>Location:</strong>
+                <div>
+                    <strong>Phone</strong><br>
+                    +91 96596 55906
+                </div>
+
+                <div>
+                    <strong>Location</strong><br>
                     Coimbatore, Tamil Nadu
-                </p>
+                </div>
 
-                <p>
-                    <strong>Services:</strong>
-                    House Construction • Villa Construction •
-                    Renovation • Building Extension
-                </p>
+                <div>
+                    <strong>Services</strong><br>
+                    House • Villa • Renovation • Extension
+                </div>
 
             </div>
 
@@ -1229,50 +1185,25 @@
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
-    <h3>
-        Mahalingam Construction
-    </h3>
+    <img src="Logo.png"
+         alt="Mahalingam Construction Logo">
 
     <p>
-        Building Spaces. Building Trust.
+        © 2026 Mahalingam Construction.
+        All Rights Reserved.
     </p>
 
-    <p style="margin-top:12px;">
-        © 2026 Mahalingam Construction. All Rights Reserved.
+    <p style="margin-top:5px;">
+        Building with Experience • Building with Trust
     </p>
 
 </footer>
-
-
-<!-- ================= PHONE / WHATSAPP SETTINGS ================= -->
-
-<script>
-
-    const phoneNumber = "9659655906";
-
-    // Call button
-    const callButton = document.getElementById("callButton");
-    callButton.href = "tel:+91" + phoneNumber;
-
-    // WhatsApp button
-    const whatsappMessage =
-        "Hello Mahalingam Construction, I am interested in your construction services.";
-
-    const whatsappButton =
-        document.getElementById("whatsappButton");
-
-    whatsappButton.href =
-        "https://wa.me/91" +
-        phoneNumber +
-        "?text=" +
-        encodeURIComponent(whatsappMessage);
-</script>
-
-</script>
 
 
 </body>
