@@ -1,21 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mahalingam Construction | House Construction in Coimbatore</title>
 
     <meta name="description"
-          content="Mahalingam Construction - House Construction, Villa Construction, Renovation and Building Extension services in Coimbatore, Tamil Nadu.">
+        content="Mahalingam Construction is a Coimbatore-based construction service specializing in house construction, villa construction, renovation and building extension projects. 20+ years of practical construction experience.">
 
-    <title>Mahalingam Construction | Coimbatore</title>
+    <meta name="keywords"
+        content="Mahalingam Construction, house construction Coimbatore, construction company Coimbatore, villa construction Coimbatore, building construction, renovation Coimbatore">
+
+    <meta name="author" content="Mahalingam Construction">
+
+    <!-- =====================================================
+         CANONICAL URL
+    ====================================================== -->
+
+    <link rel="canonical" href="https://mahalingamconstruction.in/">
+
+
+    <!-- =====================================================
+         FAVICON / WEBSITE ICON
+         This is what Google Search can use for the
+         small icon beside your website.
+    ====================================================== -->
+
+    <link
+        rel="icon"
+        href="https://mahalingamconstruction.in/Logo.png"
+        type="image/png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="https://mahalingamconstruction.in/Logo.png"
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         SOCIAL MEDIA / GOOGLE PREVIEW
+    ====================================================== -->
+
+    <meta property="og:title"
+        content="Mahalingam Construction | Coimbatore">
+
+    <meta property="og:description"
+        content="House Construction • Villa Construction • Renovation • Building Extension">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+        content="https://mahalingamconstruction.in/">
+
+    <meta property="og:image"
+        content="https://mahalingamconstruction.in/Logo.png">
+
+    <meta property="og:site_name"
+        content="Mahalingam Construction">
+
+
+    <!-- =====================================================
+         TWITTER / SOCIAL PREVIEW
+    ====================================================== -->
+
+    <meta name="twitter:card" content="summary">
+
+    <meta name="twitter:title"
+        content="Mahalingam Construction">
+
+    <meta name="twitter:description"
+        content="House Construction, Villa Construction, Renovation and Building Extension in Coimbatore.">
+
+    <meta name="twitter:image"
+        content="https://mahalingamconstruction.in/Logo.png">
+
+
+    <!-- =====================================================
+         STRUCTURED DATA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+
+        "name": "Mahalingam Construction",
+
+        "url": "https://mahalingamconstruction.in/",
+
+        "logo": "https://mahalingamconstruction.in/Logo.png",
+
+        "image": "https://mahalingamconstruction.in/Logo.png",
+
+        "telephone": "+919659655906",
+
+        "description": "Coimbatore-based construction service specializing in individual house construction, villa construction, renovation and building extension projects.",
+
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Coimbatore",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+        },
+
+        "areaServed": {
+            "@type": "City",
+            "name": "Coimbatore"
+        },
+
+        "priceRange": "₹₹"
+    }
+
+    </script>
+
+
+    <!-- =====================================================
+         STYLE
+    ====================================================== -->
 
     <style>
 
-        /* =====================================================
+        /* =================================================
            GLOBAL
-        ===================================================== */
+        ================================================= */
 
         * {
             margin: 0;
@@ -28,10 +155,14 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #080b11;
+            background: #070a0f;
             color: #f5f5f5;
+            font-family: "DM Sans", sans-serif;
             line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
         }
 
         a {
@@ -40,973 +171,1111 @@
         }
 
         :root {
-            --gold: #d9b438;
-            --gold-light: #f1d263;
-            --navy: #0b1018;
-            --dark: #080b11;
+            --gold: #d6ae35;
+            --gold-light: #f0cb57;
+
+            --black: #070a0f;
+            --dark: #0b1017;
+
             --card: #111821;
-            --text: #f5f5f5;
-            --muted: #aeb6c2;
-            --border: rgba(217, 180, 56, 0.22);
+
+            --white: #f5f5f5;
+
+            --muted: #9da7b3;
+
+            --border: rgba(214,174,53,0.20);
         }
 
 
-        /* =====================================================
+        /* =================================================
            NAVBAR
-        ===================================================== */
+        ================================================= */
 
         .navbar {
+
             position: fixed;
+
             top: 0;
             left: 0;
-            width: 100%;
-            height: 112px;
 
-            background: rgba(6, 9, 14, 0.97);
+            width: 100%;
+
+            height: 82px;
+
+            background: rgba(6,9,14,0.96);
 
             backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
 
-            border-bottom: 1px solid rgba(217, 180, 56, 0.16);
+            border-bottom:
+                1px solid rgba(255,255,255,0.06);
 
             z-index: 1000;
         }
 
+
         .nav-container {
-            width: min(1450px, 92%);
+
+            width: min(1200px, 92%);
+
             height: 100%;
 
             margin: auto;
 
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
         }
 
 
-        /* =====================================================
+        /* =================================================
            BRAND
-        ===================================================== */
+        ================================================= */
 
         .brand {
-            display: flex;
-            align-items: center;
-            gap: 18px;
 
-            min-width: 0;
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
         }
 
+
         /*
-            LOGO IS ABOVE THE COMPANY NAME
+           Logo appears ONLY in the navbar.
+           It will NOT appear inside the hero.
         */
 
         .brand-logo {
-            width: 72px;
-            height: 72px;
+
+            width: 48px;
+
+            height: 48px;
 
             object-fit: contain;
 
             display: block;
 
             flex-shrink: 0;
-
-            /* Important:
-               do NOT give the logo a black rectangle */
-            background: transparent;
         }
 
+
         .brand-info {
+
             display: flex;
+
             flex-direction: column;
+
             justify-content: center;
         }
 
-        .brand-name {
-            font-family: Georgia, "Times New Roman", serif;
 
-            font-size: 28px;
+        .brand-name {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 21px;
+
             font-weight: 700;
 
-            color: var(--gold-light);
-
             line-height: 1.1;
+
+            color: var(--gold-light);
 
             white-space: nowrap;
         }
 
+
         .brand-tagline {
-            margin-top: 8px;
 
-            font-size: 11px;
-            font-weight: 500;
+            margin-top: 4px;
 
-            letter-spacing: 3.5px;
-
-            color: #adb4bf;
-        }
-
-
-        /* =====================================================
-           NAVIGATION
-        ===================================================== */
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 38px;
-        }
-
-        .nav-links a {
-            position: relative;
-
-            font-size: 17px;
-            font-weight: 600;
-
-            color: #e6e8ec;
-
-            transition: 0.3s ease;
-        }
-
-        .nav-links a:not(.nav-contact)::after {
-            content: "";
-
-            position: absolute;
-
-            left: 0;
-            bottom: -8px;
-
-            width: 0;
-            height: 2px;
-
-            background: var(--gold);
-
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--gold-light);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-
-        /* CONTACT BUTTON */
-
-        .nav-contact {
-            padding: 16px 28px;
-
-            background: linear-gradient(
-                135deg,
-                #e5c145,
-                #cda52d
-            );
-
-            color: #080b10 !important;
-
-            border-radius: 9px;
-
-            font-weight: 700 !important;
-
-            box-shadow:
-                0 8px 25px rgba(217, 180, 56, 0.18);
-
-            transition: 0.3s ease;
-        }
-
-        .nav-contact:hover {
-            transform: translateY(-2px);
-
-            box-shadow:
-                0 12px 35px rgba(217, 180, 56, 0.32);
-        }
-
-        .nav-contact::after {
-            display: none !important;
-        }
-
-
-        /* =====================================================
-           HERO
-        ===================================================== */
-
-        .hero {
-            min-height: 100vh;
-
-            padding-top: 112px;
-
-            display: flex;
-            align-items: center;
-
-            position: relative;
-
-            overflow: hidden;
-
-            background:
-                radial-gradient(
-                    circle at 85% 20%,
-                    rgba(217, 180, 56, 0.09),
-                    transparent 32%
-                ),
-                linear-gradient(
-                    135deg,
-                    #080b11,
-                    #0b111a
-                );
-        }
-
-        .hero::before {
-            content: "";
-
-            position: absolute;
-
-            width: 600px;
-            height: 600px;
-
-            border: 1px solid rgba(217, 180, 56, 0.12);
-
-            border-radius: 50%;
-
-            right: -200px;
-            top: 50px;
-        }
-
-        .hero-container {
-            width: min(1350px, 90%);
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                1.15fr
-                0.85fr;
-
-            gap: 80px;
-
-            align-items: center;
-
-            position: relative;
-
-            z-index: 2;
-        }
-
-
-        /* HERO LEFT */
-
-        .hero-location {
-            color: var(--gold-light);
-
-            font-size: 14px;
-
-            font-weight: 700;
-
-            letter-spacing: 5px;
-
-            margin-bottom: 25px;
-        }
-
-        .hero h1 {
-            font-family: Georgia, "Times New Roman", serif;
-
-            font-size: clamp(
-                60px,
-                7vw,
-                105px
-            );
-
-            line-height: 0.98;
-
-            font-weight: 700;
-
-            letter-spacing: -4px;
-
-            color: #f7f7f7;
-        }
-
-        .hero h1 span {
-            color: var(--gold-light);
-        }
-
-        .hero-description {
-            max-width: 650px;
-
-            margin-top: 30px;
-
-            font-size: 18px;
-
-            color: var(--muted);
-
-            line-height: 1.8;
-        }
-
-        .hero-buttons {
-            display: flex;
-
-            gap: 16px;
-
-            margin-top: 38px;
-
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-
-            align-items: center;
-            justify-content: center;
-
-            padding: 16px 30px;
-
-            border-radius: 8px;
-
-            font-size: 16px;
-
-            font-weight: 700;
-
-            transition: 0.3s ease;
-        }
-
-        .btn-gold {
-            background: var(--gold);
-
-            color: #080b10;
-
-            box-shadow:
-                0 10px 30px rgba(
-                    217,
-                    180,
-                    56,
-                    0.18
-                );
-        }
-
-        .btn-gold:hover {
-            transform: translateY(-3px);
-
-            box-shadow:
-                0 15px 35px rgba(
-                    217,
-                    180,
-                    56,
-                    0.3
-                );
-        }
-
-        .btn-outline {
-            border: 1px solid rgba(
-                255,
-                255,
-                255,
-                0.25
-            );
-
-            color: #fff;
-        }
-
-        .btn-outline:hover {
-            border-color: var(--gold);
-
-            color: var(--gold-light);
-
-            transform: translateY(-3px);
-        }
-
-
-        /* =====================================================
-           WHY CHOOSE US
-        ===================================================== */
-
-        .why-card {
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(20, 28, 39, 0.96),
-                    rgba(12, 18, 27, 0.96)
-                );
-
-            border: 1px solid var(--border);
-
-            border-radius: 26px;
-
-            padding: 50px;
-
-            box-shadow:
-                0 30px 80px rgba(0,0,0,0.35);
-        }
-
-        .why-card h2 {
-            font-family: Georgia, "Times New Roman", serif;
-
-            font-size: 42px;
-
-            margin-bottom: 42px;
-        }
-
-        .why-item {
-            padding: 24px 0;
-
-            border-bottom: 1px solid
-                rgba(255,255,255,0.08);
-        }
-
-        .why-item:last-child {
-            border-bottom: none;
-        }
-
-        .why-item h3 {
-            color: #f0ca42;
-
-            font-size: 20px;
-
-            margin-bottom: 7px;
-        }
-
-        .why-item p {
-            color: var(--muted);
-
-            font-size: 16px;
-        }
-
-
-        /* =====================================================
-           SECTIONS
-        ===================================================== */
-
-        section {
-            padding: 110px 0;
-        }
-
-        .section-container {
-            width: min(1200px, 90%);
-
-            margin: auto;
-        }
-
-        .section-label {
-            color: var(--gold-light);
-
-            text-transform: uppercase;
-
-            letter-spacing: 4px;
-
-            font-size: 13px;
-
-            font-weight: 700;
-
-            margin-bottom: 14px;
-        }
-
-        .section-title {
-            font-family: Georgia, "Times New Roman", serif;
-
-            font-size: clamp(
-                42px,
-                5vw,
-                65px
-            );
-
-            line-height: 1.1;
-
-            margin-bottom: 25px;
-        }
-
-        .section-description {
-            max-width: 800px;
-
-            color: var(--muted);
-
-            font-size: 17px;
-
-            line-height: 1.8;
-        }
-
-
-        /* =====================================================
-           ABOUT
-        ===================================================== */
-
-        #about {
-            background: #0a0f17;
-        }
-
-        .about-grid {
-            display: grid;
-
-            grid-template-columns:
-                1fr
-                1fr;
-
-            gap: 70px;
-
-            margin-top: 55px;
-        }
-
-        .about-box {
-            padding: 35px;
-
-            background: #101721;
-
-            border: 1px solid
-                rgba(217,180,56,0.14);
-
-            border-radius: 18px;
-        }
-
-        .about-box h3 {
-            color: var(--gold-light);
-
-            font-family: Georgia, serif;
-
-            font-size: 27px;
-
-            margin-bottom: 20px;
-        }
-
-        .about-box p {
-            color: var(--muted);
-
-            line-height: 1.8;
-
-            margin-bottom: 20px;
-        }
-
-        .about-box ul {
-            list-style: none;
-        }
-
-        .about-box li {
-            color: #d7dce3;
-
-            padding: 8px 0;
-        }
-
-        .about-box li::before {
-            content: "✦";
-
-            color: var(--gold);
-
-            margin-right: 10px;
-        }
-
-
-        /* =====================================================
-           PROJECTS
-        ===================================================== */
-
-        #projects {
-            background: #080c12;
-        }
-
-        .projects-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 24px;
-
-            margin-top: 55px;
-        }
-
-        .project-card {
-            background: #111821;
-
-            border: 1px solid
-                rgba(217,180,56,0.14);
-
-            border-radius: 18px;
-
-            padding: 32px;
-
-            transition: 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-7px);
-
-            border-color:
-                rgba(217,180,56,0.4);
-
-            box-shadow:
-                0 20px 50px rgba(0,0,0,0.25);
-        }
-
-        .project-number {
-            color: var(--gold);
-
-            font-size: 13px;
+            font-size: 8px;
 
             letter-spacing: 3px;
 
+            color: #9ba4af;
+
+            font-weight: 500;
+        }
+
+
+        /* =================================================
+           NAVIGATION
+        ================================================= */
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 28px;
+        }
+
+
+        .nav-links a {
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            color: #e7e9ec;
+
+            transition: 0.25s ease;
+        }
+
+
+        .nav-links a:hover {
+
+            color: var(--gold-light);
+        }
+
+
+        .nav-contact {
+
+            padding:
+                10px
+                18px;
+
+            background: var(--gold);
+
+            color: #080a0e !important;
+
+            border-radius: 7px;
+
+            font-weight: 700 !important;
+        }
+
+
+        .nav-contact:hover {
+
+            background: var(--gold-light);
+
+            transform: translateY(-1px);
+        }
+
+
+        /* =================================================
+           HERO
+        ================================================= */
+
+        .hero {
+
+            min-height: 100vh;
+
+            padding-top: 82px;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+
+            background:
+
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(214,174,53,0.07),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #070a0f,
+                    #0b1119
+                );
+        }
+
+
+        .hero-container {
+
+            width: min(1200px, 90%);
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1.1fr
+                0.9fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+
+        .hero-location {
+
+            color: var(--gold-light);
+
+            font-size: 10px;
+
             font-weight: 700;
+
+            letter-spacing: 4px;
 
             margin-bottom: 18px;
         }
 
-        .project-card h3 {
-            font-family: Georgia, serif;
 
-            font-size: 26px;
+        .hero h1 {
 
-            margin-bottom: 15px;
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(48px, 5vw, 68px);
+
+            font-weight: 600;
+
+            line-height: 1.06;
+
+            letter-spacing: -1px;
+
+            color: var(--white);
         }
 
-        .project-card p {
-            color: var(--muted);
+
+        .hero h1 span {
+
+            color: var(--gold-light);
         }
 
 
-        /* =====================================================
-           SERVICES
-        ===================================================== */
+        .hero-description {
 
-        #services {
-            background: #0a0f17;
-        }
+            max-width: 570px;
 
-        .services-grid {
-            display: grid;
+            margin-top: 22px;
 
-            grid-template-columns:
-                repeat(4, 1fr);
-
-            gap: 20px;
-
-            margin-top: 55px;
-        }
-
-        .service-card {
-            padding: 30px 25px;
-
-            background: #111821;
-
-            border-radius: 16px;
-
-            border: 1px solid
-                rgba(217,180,56,0.14);
-
-            text-align: center;
-        }
-
-        .service-card .icon {
-            font-size: 35px;
-
-            margin-bottom: 15px;
-        }
-
-        .service-card h3 {
-            font-size: 18px;
-
-            color: #f1d263;
-
-            margin-bottom: 10px;
-        }
-
-        .service-card p {
             color: var(--muted);
 
-            font-size: 14px;
+            font-size: 15px;
+
+            line-height: 1.8;
         }
 
 
-        /* =====================================================
-           PRICING
-        ===================================================== */
+        /* =================================================
+           BUTTONS
+        ================================================= */
 
-        .pricing-grid {
-            display: grid;
+        .hero-buttons {
 
-            grid-template-columns:
-                1fr 1fr;
+            display: flex;
 
-            gap: 25px;
+            gap: 12px;
 
-            margin-top: 55px;
+            margin-top: 28px;
         }
 
-        .price-card {
-            padding: 40px;
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding:
+                11px
+                21px;
+
+            border-radius: 7px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            transition: 0.25s ease;
+        }
+
+
+        .btn-gold {
+
+            background: var(--gold);
+
+            color: #080a0e;
+        }
+
+
+        .btn-gold:hover {
+
+            background: var(--gold-light);
+
+            transform: translateY(-2px);
+        }
+
+
+        .btn-outline {
+
+            border:
+                1px solid
+                rgba(255,255,255,0.20);
+
+            color: #fff;
+        }
+
+
+        .btn-outline:hover {
+
+            border-color: var(--gold);
+
+            color: var(--gold-light);
+        }
+
+
+        /* =================================================
+           WHY CHOOSE US
+        ================================================= */
+
+        .why-card {
 
             background:
                 linear-gradient(
                     145deg,
                     #121a24,
-                    #0d131c
+                    #0d131b
                 );
 
-            border-radius: 20px;
+            border:
+                1px solid
+                var(--border);
 
-            border: 1px solid
-                rgba(217,180,56,0.18);
+            border-radius: 18px;
+
+            padding: 34px;
+
+            box-shadow:
+                0 25px 60px
+                rgba(0,0,0,0.25);
         }
 
-        .price-card h3 {
-            font-family: Georgia, serif;
 
-            font-size: 27px;
+        .why-card h2 {
 
-            margin-bottom: 15px;
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 32px;
+
+            font-weight: 600;
+
+            margin-bottom: 24px;
         }
 
-        .price {
-            font-size: 36px;
+
+        .why-item {
+
+            padding:
+                16px 0;
+
+            border-bottom:
+                1px solid
+                rgba(255,255,255,0.07);
+        }
+
+
+        .why-item:last-child {
+
+            border-bottom: none;
+        }
+
+
+        .why-item h3 {
 
             color: var(--gold-light);
 
-            font-weight: 800;
+            font-size: 15px;
 
-            margin-bottom: 12px;
+            margin-bottom: 4px;
         }
 
-        .price-card p {
+
+        .why-item p {
+
             color: var(--muted);
-        }
-
-        .price-note {
-            margin-top: 40px;
-
-            color: #858e9b;
 
             font-size: 13px;
-
-            text-align: center;
         }
 
 
-        /* =====================================================
-           CONTACT
-        ===================================================== */
+        /* =================================================
+           SECTIONS
+        ================================================= */
 
-        #contact {
-            background: #070a0f;
+        section {
 
-            text-align: center;
+            padding:
+                85px 0;
         }
 
-        .contact-box {
-            max-width: 850px;
+
+        .section-container {
+
+            width: min(1150px, 90%);
 
             margin: auto;
         }
 
+
+        .section-label {
+
+            color: var(--gold-light);
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 9px;
+        }
+
+
+        .section-title {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(34px, 4vw, 48px);
+
+            font-weight: 600;
+
+            line-height: 1.15;
+
+            margin-bottom: 16px;
+        }
+
+
+        .section-description {
+
+            max-width: 760px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =================================================
+           ABOUT
+        ================================================= */
+
+        #about {
+
+            background: #090e15;
+        }
+
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 22px;
+
+            margin-top: 38px;
+        }
+
+
+        .about-box {
+
+            padding: 28px;
+
+            background: #101720;
+
+            border:
+                1px solid
+                rgba(214,174,53,0.13);
+
+            border-radius: 14px;
+        }
+
+
+        .about-box h3 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 22px;
+
+            color: var(--gold-light);
+
+            margin-bottom: 8px;
+        }
+
+
+        .about-box p {
+
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            margin-bottom: 12px;
+        }
+
+
+        .about-box ul {
+
+            list-style: none;
+        }
+
+
+        .about-box li {
+
+            color: #d5dae0;
+
+            font-size: 13px;
+
+            padding: 4px 0;
+        }
+
+
+        .about-box li::before {
+
+            content: "✦";
+
+            color: var(--gold);
+
+            margin-right: 8px;
+        }
+
+
+        /* =================================================
+           PROJECTS
+        ================================================= */
+
+        #projects {
+
+            background: #070b11;
+        }
+
+
+        .projects-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+
+            margin-top: 38px;
+        }
+
+
+        .project-card {
+
+            background: #101720;
+
+            border:
+                1px solid
+                rgba(214,174,53,0.13);
+
+            border-radius: 14px;
+
+            padding: 26px;
+
+            transition: 0.25s ease;
+        }
+
+
+        .project-card:hover {
+
+            transform: translateY(-4px);
+
+            border-color:
+                rgba(214,174,53,0.35);
+        }
+
+
+        .project-number {
+
+            color: var(--gold);
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .project-card h3 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 21px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .project-card p {
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        /* =================================================
+           SERVICES
+        ================================================= */
+
+        #services {
+
+            background: #090e15;
+        }
+
+
+        .services-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 16px;
+
+            margin-top: 38px;
+        }
+
+
+        .service-card {
+
+            padding: 24px 18px;
+
+            text-align: center;
+
+            background: #101720;
+
+            border:
+                1px solid
+                rgba(214,174,53,0.13);
+
+            border-radius: 13px;
+        }
+
+
+        .service-card .icon {
+
+            font-size: 25px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .service-card h3 {
+
+            color: var(--gold-light);
+
+            font-size: 14px;
+
+            margin-bottom: 6px;
+        }
+
+
+        .service-card p {
+
+            color: var(--muted);
+
+            font-size: 12px;
+        }
+
+
+        /* =================================================
+           PRICING
+        ================================================= */
+
+        .pricing-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 18px;
+
+            margin-top: 38px;
+        }
+
+
+        .price-card {
+
+            padding: 28px;
+
+            background: #101720;
+
+            border:
+                1px solid
+                rgba(214,174,53,0.13);
+
+            border-radius: 14px;
+        }
+
+
+        .price-card h3 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 21px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .price {
+
+            color: var(--gold-light);
+
+            font-size: 27px;
+
+            font-weight: 700;
+
+            margin-bottom: 6px;
+        }
+
+
+        .price-card p {
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        .price-note {
+
+            margin-top: 22px;
+
+            color: #737d89;
+
+            text-align: center;
+
+            font-size: 11px;
+        }
+
+
+        /* =================================================
+           CONTACT
+        ================================================= */
+
+        #contact {
+
+            background: #06090e;
+
+            text-align: center;
+        }
+
+
+        .contact-box {
+
+            max-width: 760px;
+
+            margin: auto;
+        }
+
+
         .contact-box h2 {
-            font-family: Georgia, serif;
 
-            font-size: clamp(
-                42px,
-                6vw,
-                70px
-            );
+            font-family:
+                "Playfair Display",
+                serif;
 
-            margin-bottom: 20px;
+            font-size:
+                clamp(36px, 5vw, 54px);
+
+            line-height: 1.15;
+
+            margin-bottom: 15px;
         }
 
-        .contact-box > p {
-            color: var(--muted);
 
-            font-size: 18px;
+        .contact-box h2 span {
 
-            margin-bottom: 35px;
-        }
-
-        .contact-buttons {
-            display: flex;
-
-            justify-content: center;
-
-            gap: 15px;
-
-            flex-wrap: wrap;
-
-            margin-bottom: 40px;
-        }
-
-        .contact-info {
-            color: var(--muted);
-
-            font-size: 16px;
-
-            line-height: 2;
-        }
-
-        .contact-info strong {
             color: var(--gold-light);
         }
 
 
-        /* =====================================================
+        .contact-box > p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .contact-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 24px;
+        }
+
+
+        .contact-info {
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            line-height: 2;
+        }
+
+
+        .contact-info strong {
+
+            color: var(--gold-light);
+        }
+
+
+        /* =================================================
            FOOTER
-        ===================================================== */
+        ================================================= */
 
         footer {
-            padding: 30px;
+
+            padding: 23px;
 
             text-align: center;
 
-            background: #05070b;
+            background: #04060a;
 
-            border-top: 1px solid
-                rgba(255,255,255,0.06);
+            color: #68717d;
 
-            color: #737c88;
-
-            font-size: 14px;
+            font-size: 11px;
         }
 
+
         footer span {
+
             color: var(--gold);
         }
 
 
-        /* =====================================================
-           MOBILE
-        ===================================================== */
+        /* =================================================
+           TABLET
+        ================================================= */
 
-        @media (max-width: 1000px) {
-
-            .nav-links {
-                gap: 20px;
-            }
-
-            .nav-links a:not(.nav-contact) {
-                display: none;
-            }
+        @media (max-width: 950px) {
 
             .hero-container {
+
                 grid-template-columns: 1fr;
 
-                gap: 50px;
+                gap: 40px;
             }
+
 
             .projects-grid {
+
                 grid-template-columns:
                     1fr 1fr;
             }
+
 
             .services-grid {
+
                 grid-template-columns:
                     1fr 1fr;
             }
+
         }
 
+
+        /* =================================================
+           MOBILE
+        ================================================= */
 
         @media (max-width: 700px) {
 
             .navbar {
-                height: 88px;
+
+                height: 74px;
             }
 
+
             .nav-container {
+
                 width: 94%;
             }
 
+
             .brand-logo {
-                width: 54px;
-                height: 54px;
+
+                width: 40px;
+
+                height: 40px;
             }
+
 
             .brand-name {
-                font-size: 19px;
+
+                font-size: 16px;
             }
+
 
             .brand-tagline {
-                font-size: 8px;
 
-                letter-spacing: 2px;
-            }
-
-            .nav-contact {
-                padding: 11px 15px;
-
-                font-size: 13px !important;
-            }
-
-            .hero {
-                padding-top: 88px;
-            }
-
-            .hero h1 {
-                font-size: 55px;
-
-                letter-spacing: -2px;
-            }
-
-            .why-card {
-                padding: 30px;
-            }
-
-            .why-card h2 {
-                font-size: 34px;
-            }
-
-            .about-grid,
-            .pricing-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-
-        @media (max-width: 450px) {
-
-            .brand-tagline {
                 display: none;
             }
 
-            .brand-name {
-                font-size: 17px;
+
+            .nav-links {
+
+                gap: 8px;
             }
 
-            .brand-logo {
-                width: 48px;
-                height: 48px;
+
+            .nav-links a:not(.nav-contact) {
+
+                display: none;
             }
+
+
+            .nav-contact {
+
+                padding:
+                    8px 12px;
+
+                font-size: 11px !important;
+            }
+
+
+            .hero {
+
+                padding-top: 74px;
+            }
+
 
             .hero h1 {
-                font-size: 46px;
+
+                font-size: 43px;
             }
 
-            .services-grid {
+
+            .about-grid,
+
+            .pricing-grid {
+
                 grid-template-columns: 1fr;
             }
 
-            .btn {
+
+            .projects-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .services-grid {
+
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 430px) {
+
+            .brand-name {
+
+                font-size: 14px;
+            }
+
+
+            .brand-logo {
+
+                width: 36px;
+
+                height: 36px;
+            }
+
+
+            .hero h1 {
+
+                font-size: 38px;
+            }
+
+
+            .services-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .hero-buttons .btn {
+
                 width: 100%;
             }
+
         }
 
     </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =========================================================
-     NAVBAR
-========================================================= -->
+<!-- =====================================================
+     NAVIGATION
+====================================================== -->
 
 <header class="navbar">
 
     <div class="nav-container">
 
+
         <a href="#home" class="brand">
 
-            <!-- YOUR NEW LOGO -->
+
+            <!-- YOUR LOGO -->
+
             <img
-                src="./Logo.png"
+                src="https://mahalingamconstruction.in/Logo.png"
                 alt="Mahalingam Construction Logo"
                 class="brand-logo"
             >
+
 
             <div class="brand-info">
 
@@ -1025,16 +1294,26 @@
 
         <nav class="nav-links">
 
-            <a href="#home">Home</a>
+            <a href="#home">
+                Home
+            </a>
 
-            <a href="#about">About Us</a>
+            <a href="#about">
+                About Us
+            </a>
 
-            <a href="#projects">Projects</a>
+            <a href="#projects">
+                Projects
+            </a>
 
-            <a href="#services">Services</a>
+            <a href="#services">
+                Services
+            </a>
 
-            <a href="#contact"
-               class="nav-contact">
+            <a
+                href="#contact"
+                class="nav-contact"
+            >
                 Contact Us
             </a>
 
@@ -1046,9 +1325,9 @@
 
 
 
-<!-- =========================================================
-     HOME / HERO
-========================================================= -->
+<!-- =====================================================
+     HOME
+====================================================== -->
 
 <section id="home" class="hero">
 
@@ -1063,10 +1342,17 @@
 
 
             <h1>
+
                 Building Your
+
                 <br>
-                <span>Dreams</span>
-                With Experience.
+
+                <span>Dreams</span> With
+
+                <br>
+
+                Experience.
+
             </h1>
 
 
@@ -1074,14 +1360,14 @@
 
                 Building homes with practical expertise,
                 trusted workmanship and personal attention.
-                From new homes and villas to renovations and
-                building extensions, we bring experience to
-                every project.
+                From new homes and villas to renovations
+                and building extensions.
 
             </p>
 
 
             <div class="hero-buttons">
+
 
                 <a
                     href="tel:9659655906"
@@ -1105,8 +1391,6 @@
 
 
 
-        <!-- WHY CHOOSE US -->
-
         <div class="why-card">
 
             <h2>
@@ -1121,8 +1405,7 @@
                 </h3>
 
                 <p>
-                    Practical, hands-on construction
-                    expertise.
+                    Practical, hands-on construction expertise.
                 </p>
 
             </div>
@@ -1149,8 +1432,7 @@
                 </h3>
 
                 <p>
-                    Direct communication throughout
-                    your construction journey.
+                    Direct communication throughout your project.
                 </p>
 
             </div>
@@ -1163,8 +1445,8 @@
                 </h3>
 
                 <p>
-                    Practical decisions and workmanship
-                    focused on long-term value.
+                    Practical decisions focused on
+                    long-term value.
                 </p>
 
             </div>
@@ -1177,21 +1459,24 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      ABOUT
-========================================================= -->
+====================================================== -->
 
 <section id="about">
 
     <div class="section-container">
 
+
         <div class="section-label">
             About Mahalingam Construction
         </div>
 
+
         <h2 class="section-title">
             Experience That Builds Confidence
         </h2>
+
 
         <p class="section-description">
 
@@ -1216,7 +1501,9 @@
                 </h3>
 
                 <p>
-                    <strong>Technical Head (Mestri)</strong>
+                    <strong>
+                        Technical Head (Mestri)
+                    </strong>
                 </p>
 
                 <p>
@@ -1312,17 +1599,19 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      PROJECTS
-========================================================= -->
+====================================================== -->
 
 <section id="projects">
 
     <div class="section-container">
 
+
         <div class="section-label">
             Our Work
         </div>
+
 
         <h2 class="section-title">
             Ongoing Projects
@@ -1350,7 +1639,6 @@
             </div>
 
 
-
             <div class="project-card">
 
                 <div class="project-number">
@@ -1370,7 +1658,6 @@
             </div>
 
 
-
             <div class="project-card">
 
                 <div class="project-number">
@@ -1383,13 +1670,12 @@
 
                 <p>
                     Building extension project with
-                    existing ground floor, 1 BHK on the
-                    first floor and bedroom with attached
-                    bathroom on the second floor.
+                    existing ground floor, 1 BHK on
+                    the first floor and bedroom with
+                    attached bathroom on the second floor.
                 </p>
 
             </div>
-
 
         </div>
 
@@ -1399,17 +1685,19 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      SERVICES
-========================================================= -->
+====================================================== -->
 
 <section id="services">
 
     <div class="section-container">
 
+
         <div class="section-label">
             What We Do
         </div>
+
 
         <h2 class="section-title">
             Our Services
@@ -1490,7 +1778,6 @@
 
             </div>
 
-
         </div>
 
     </div>
@@ -1499,20 +1786,22 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      PRICING
-========================================================= -->
+====================================================== -->
 
 <section>
 
     <div class="section-container">
 
+
         <div class="section-label">
             Construction
         </div>
 
+
         <h2 class="section-title">
-            Transparent Starting Prices
+            Starting Prices
         </h2>
 
 
@@ -1532,12 +1821,10 @@
                 <p>
                     Starting price for house construction.
                     Final cost depends on design,
-                    specifications, materials and
-                    site requirements.
+                    specifications and materials.
                 </p>
 
             </div>
-
 
 
             <div class="price-card">
@@ -1551,14 +1838,12 @@
                 </div>
 
                 <p>
-                    Starting price for commercial
-                    construction. Final pricing depends
-                    on project specifications and
-                    site conditions.
+                    Starting price for commercial construction.
+                    Final pricing depends on project
+                    specifications and site conditions.
                 </p>
 
             </div>
-
 
         </div>
 
@@ -1577,15 +1862,17 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      CONTACT
-========================================================= -->
+====================================================== -->
 
 <section id="contact">
 
     <div class="section-container">
 
+
         <div class="contact-box">
+
 
             <div class="section-label">
                 Start Your Project
@@ -1593,17 +1880,23 @@
 
 
             <h2>
+
                 Let's Build Your
-                <span style="color:#e6c65c;">
+
+                <span>
                     Dream Home.
                 </span>
+
             </h2>
 
 
             <p>
+
                 Planning a new home, villa, renovation
                 or building extension?
+
                 Talk to us about your requirements.
+
             </p>
 
 
@@ -1643,8 +1936,8 @@
 
                 <div>
                     <strong>Services:</strong>
-                    House Construction • Villa Construction
-                    • Renovation • Building Extension
+                    House Construction • Villa Construction •
+                    Renovation • Building Extension
                 </div>
 
             </div>
@@ -1657,18 +1950,23 @@
 
 
 
-<!-- =========================================================
+<!-- =====================================================
      FOOTER
-========================================================= -->
+====================================================== -->
 
 <footer>
 
     © 2026
-    <span>Mahalingam Construction</span>.
-    All Rights Reserved.
+
+    <span>
+        Mahalingam Construction
+    </span>
+
+    . All Rights Reserved.
 
 </footer>
 
 
 </body>
+
 </html>
