@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mahalingam Construction | House Construction in Coimbatore</title>
+    <title>Mahalingam Construction | Coimbatore</title>
 
     <meta name="description"
-          content="Mahalingam Construction - Professional house construction, villa construction, renovation and building extension services in Coimbatore. 20+ years of practical construction experience.">
+        content="Mahalingam Construction - House construction, villa construction, renovation and building extension services in Coimbatore. 20+ years of practical construction experience.">
 
-    <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
 
     <style>
 
@@ -38,56 +37,56 @@
         :root {
             --gold: #c9a227;
             --gold-light: #e3c65c;
-            --black: #0b0b0b;
+            --black: #080808;
             --dark: #111111;
             --dark-2: #171717;
             --white: #ffffff;
             --gray: #b7b7b7;
         }
 
-        /* ================= NAVBAR ================= */
+        /* ================= NAVIGATION ================= */
 
         header {
             position: fixed;
             top: 0;
+            left: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(11,11,11,0.94);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(201,162,39,0.2);
+            background: rgba(8, 8, 8, 0.95);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(201, 162, 39, 0.2);
         }
 
         .nav {
             max-width: 1200px;
             margin: auto;
-            padding: 18px 25px;
+            padding: 17px 25px;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
         .logo {
+            text-decoration: none;
+            color: var(--gold-light);
             font-family: "Playfair Display", serif;
             font-size: 25px;
             font-weight: 700;
-            color: var(--gold-light);
-            text-decoration: none;
-            letter-spacing: 0.5px;
         }
 
         .logo span {
             display: block;
             font-family: "DM Sans", sans-serif;
-            font-size: 10px;
+            font-size: 9px;
             letter-spacing: 3px;
-            color: #aaa;
+            color: #999;
             text-transform: uppercase;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 28px;
         }
 
         nav a {
@@ -112,23 +111,23 @@
 
             background:
                 linear-gradient(
-                    rgba(0,0,0,0.72),
-                    rgba(0,0,0,0.82)
+                    rgba(0,0,0,0.68),
+                    rgba(0,0,0,0.9)
                 ),
                 radial-gradient(
-                    circle at 70% 40%,
-                    rgba(201,162,39,0.20),
+                    circle at 75% 40%,
+                    rgba(201,162,39,0.22),
                     transparent 35%
                 ),
-                #0b0b0b;
+                #080808;
         }
 
-        .hero::after {
+        .hero::before {
             content: "";
             position: absolute;
             width: 500px;
             height: 500px;
-            right: -200px;
+            right: -180px;
             top: 100px;
             border: 1px solid rgba(201,162,39,0.25);
             border-radius: 50%;
@@ -145,8 +144,8 @@
 
         .small-title {
             color: var(--gold-light);
-            letter-spacing: 4px;
             text-transform: uppercase;
+            letter-spacing: 4px;
             font-size: 13px;
             font-weight: 600;
             margin-bottom: 20px;
@@ -165,7 +164,7 @@
         }
 
         .hero p {
-            max-width: 650px;
+            max-width: 700px;
             color: #c8c8c8;
             font-size: 18px;
             margin-bottom: 35px;
@@ -179,8 +178,8 @@
 
         .btn {
             display: inline-block;
-            padding: 14px 27px;
-            border-radius: 3px;
+            padding: 14px 28px;
+            border-radius: 4px;
             text-decoration: none;
             font-weight: 600;
             transition: 0.3s;
@@ -193,7 +192,7 @@
 
         .btn-gold:hover {
             background: var(--gold-light);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
 
         .btn-outline {
@@ -204,6 +203,7 @@
         .btn-outline:hover {
             border-color: var(--gold);
             color: var(--gold-light);
+            transform: translateY(-3px);
         }
 
         /* ================= COMMON ================= */
@@ -228,19 +228,20 @@
 
         .section-title {
             font-family: "Playfair Display", serif;
-            font-size: clamp(34px, 5vw, 52px);
+            font-size: clamp(35px, 5vw, 52px);
+            line-height: 1.2;
             margin-bottom: 20px;
         }
 
         .section-description {
             color: var(--gray);
-            max-width: 720px;
+            max-width: 750px;
         }
 
         /* ================= ABOUT ================= */
 
         .about {
-            background: #111111;
+            background: #111;
         }
 
         .about-grid {
@@ -259,46 +260,53 @@
             border-left: 3px solid var(--gold);
             padding: 20px 25px;
             background: #171717;
-            margin: 25px 0;
+            margin: 28px 0;
         }
 
         .highlight strong {
+            display: block;
             color: var(--gold-light);
             font-size: 28px;
-            display: block;
         }
 
         .experience-card {
             min-height: 430px;
-            background:
-                linear-gradient(
-                    rgba(0,0,0,0.35),
-                    rgba(0,0,0,0.85)
-                ),
-                linear-gradient(
-                    135deg,
-                    #333 0%,
-                    #151515 50%,
-                    #252525 100%
-                );
-
-            border: 1px solid rgba(201,162,39,0.25);
             padding: 45px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.25),
+                    rgba(0,0,0,0.9)
+                ),
+                linear-gradient(
+                    135deg,
+                    #333,
+                    #151515,
+                    #252525
+                );
+
+            border: 1px solid rgba(201,162,39,0.25);
         }
 
         .experience-card h3 {
             font-family: "Playfair Display", serif;
             font-size: 34px;
             color: var(--gold-light);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .experience-card p {
+            color: #aaa;
         }
 
         /* ================= TEAM ================= */
 
         .team {
-            background: #0b0b0b;
+            background: #080808;
         }
 
         .team-grid {
@@ -309,9 +317,9 @@
         }
 
         .team-card {
-            background: var(--dark-2);
+            background: #171717;
             padding: 35px;
-            border: 1px solid #272727;
+            border: 1px solid #292929;
             transition: 0.3s;
         }
 
@@ -320,15 +328,15 @@
             border-color: var(--gold);
         }
 
-        .team-card .number {
+        .number {
             color: var(--gold);
-            font-size: 13px;
+            font-size: 12px;
             letter-spacing: 2px;
         }
 
         .team-card h3 {
             font-family: "Playfair Display", serif;
-            font-size: 27px;
+            font-size: 28px;
             margin: 10px 0;
         }
 
@@ -391,7 +399,7 @@
         /* ================= PROJECTS ================= */
 
         .projects {
-            background: #0b0b0b;
+            background: #080808;
         }
 
         .project-grid {
@@ -467,7 +475,6 @@
             padding: 45px;
             background: #181818;
             border: 1px solid #292929;
-            position: relative;
         }
 
         .price-card.featured {
@@ -499,34 +506,41 @@
         /* ================= CONTACT ================= */
 
         .contact {
-            background:
-                linear-gradient(
-                    rgba(0,0,0,0.85),
-                    rgba(0,0,0,0.95)
-                ),
-                #161616;
+            background: #050505;
             text-align: center;
         }
 
         .contact-box {
-            max-width: 850px;
+            max-width: 900px;
             margin: auto;
         }
 
         .contact h2 {
             font-family: "Playfair Display", serif;
             font-size: clamp(38px, 6vw, 60px);
+            line-height: 1.2;
             margin-bottom: 20px;
         }
 
-        .contact p {
+        .contact > .container p {
             color: #aaa;
-            margin-bottom: 30px;
+        }
+
+        .contact-buttons {
+            margin: 35px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         .contact-details {
             margin-top: 35px;
-            color: #ccc;
+            color: #aaa;
+        }
+
+        .contact-details p {
+            margin: 12px 0;
         }
 
         .contact-details strong {
@@ -536,7 +550,7 @@
         /* ================= FOOTER ================= */
 
         footer {
-            background: #050505;
+            background: #030303;
             border-top: 1px solid #222;
             padding: 35px 25px;
             text-align: center;
@@ -579,7 +593,7 @@
         @media (max-width: 650px) {
 
             .nav {
-                padding: 15px;
+                padding: 15px 18px;
             }
 
             nav ul {
@@ -614,6 +628,11 @@
             .price-card {
                 padding: 30px;
             }
+
+            .contact-buttons .btn {
+                width: 100%;
+                text-align: center;
+            }
         }
 
     </style>
@@ -624,6 +643,7 @@
 <!-- ================= NAVIGATION ================= -->
 
 <header>
+
     <div class="nav">
 
         <a href="#home" class="logo">
@@ -632,21 +652,31 @@
         </a>
 
         <nav>
+
             <ul>
+
                 <li><a href="#home">Home</a></li>
+
                 <li><a href="#about">About Us</a></li>
+
                 <li><a href="#services">Services</a></li>
+
                 <li><a href="#projects">Projects</a></li>
+
                 <li><a href="#pricing">Pricing</a></li>
+
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
+
         </nav>
 
     </div>
+
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- ================= HOME ================= -->
 
 <section class="hero" id="home">
 
@@ -663,8 +693,9 @@
 
         <p>
             Quality house construction, villa construction,
-            renovation and building extension services backed by
-            20+ years of practical construction experience.
+            renovation and building extension services backed
+            by more than 20 years of practical construction
+            experience.
         </p>
 
         <div class="buttons">
@@ -695,7 +726,7 @@
             <div class="about-text">
 
                 <div class="section-label">
-                    About Us
+                    About Mahalingam Construction
                 </div>
 
                 <h2 class="section-title">
@@ -704,15 +735,16 @@
 
                 <p>
                     <strong>Mahalingam Construction</strong> is a
-                    Coimbatore-based construction service focused on
-                    individual house construction, villa construction,
-                    renovation and building extension projects.
+                    Coimbatore-based construction service focused
+                    on individual house construction, villa
+                    construction, renovation and building
+                    extension projects.
                 </p>
 
                 <p>
                     Our foundation is built on
-                    <strong>20+ years of practical, hands-on
-                    construction experience.</strong>
+                    <strong>20+ years of practical,
+                    hands-on construction experience.</strong>
                 </p>
 
                 <div class="highlight">
@@ -744,8 +776,8 @@
                 </h3>
 
                 <p>
-                    From planning to execution, we focus on practical
-                    solutions and quality workmanship.
+                    From planning to execution, we focus on
+                    practical solutions and quality workmanship.
                 </p>
 
             </div>
@@ -772,9 +804,9 @@
         </h2>
 
         <p class="section-description">
-            Combining decades of construction knowledge with modern
-            customer coordination to provide a smooth construction
-            experience.
+            Combining decades of construction knowledge with
+            modern customer coordination to provide a smooth
+            construction experience.
         </p>
 
 
@@ -796,8 +828,8 @@
 
                 <p>
                     With over 20 years of hands-on construction
-                    experience, Mahalingam personally handles the
-                    technical aspects of construction.
+                    experience, Mahalingam personally handles
+                    the technical aspects of construction.
                 </p>
 
                 <ul>
@@ -873,39 +905,66 @@
         <div class="service-grid">
 
             <div class="service">
+
                 <div class="service-icon">🏠</div>
-                <h3>House Construction</h3>
+
+                <h3>
+                    House Construction
+                </h3>
+
                 <p>
-                    Complete individual house construction from
-                    planning to execution.
+                    Complete individual house construction
+                    from planning to execution.
                 </p>
+
             </div>
 
+
             <div class="service">
+
                 <div class="service-icon">🏢</div>
-                <h3>Villa Construction</h3>
+
+                <h3>
+                    Villa Construction
+                </h3>
+
                 <p>
-                    Quality-focused villa construction tailored
-                    to your requirements.
+                    Quality-focused villa construction
+                    tailored to your requirements.
                 </p>
+
             </div>
 
+
             <div class="service">
+
                 <div class="service-icon">🔨</div>
-                <h3>Renovation</h3>
+
+                <h3>
+                    Renovation
+                </h3>
+
                 <p>
-                    Renovation and improvement work for existing
-                    residential properties.
+                    Renovation and improvement work for
+                    existing residential properties.
                 </p>
+
             </div>
 
+
             <div class="service">
+
                 <div class="service-icon">🏗️</div>
-                <h3>Building Extension</h3>
+
+                <h3>
+                    Building Extension
+                </h3>
+
                 <p>
                     First-floor, second-floor and building
                     extension projects.
                 </p>
+
             </div>
 
         </div>
@@ -937,10 +996,15 @@
 
         <div class="project-grid">
 
+
             <div class="project">
 
                 <div class="project-top">
-                    <span>Residential</span>
+
+                    <span>
+                        Residential
+                    </span>
+
                 </div>
 
                 <div class="project-content">
@@ -962,7 +1026,11 @@
             <div class="project">
 
                 <div class="project-top">
-                    <span>Residential</span>
+
+                    <span>
+                        Residential
+                    </span>
+
                 </div>
 
                 <div class="project-content">
@@ -973,7 +1041,8 @@
 
                     <p>
                         1800 sq.ft residential project at
-                        Peedampalli using Hollow Block Construction.
+                        Peedampalli using Hollow Block
+                        Construction.
                     </p>
 
                 </div>
@@ -984,7 +1053,11 @@
             <div class="project">
 
                 <div class="project-top">
-                    <span>Building Extension</span>
+
+                    <span>
+                        Building Extension
+                    </span>
+
                 </div>
 
                 <div class="project-content">
@@ -994,14 +1067,15 @@
                     </h3>
 
                     <p>
-                        Existing ground floor with 1 BHK on the
-                        first floor and bedroom with attached
-                        bathroom on the second floor.
+                        Existing ground floor with 1 BHK on
+                        the first floor and bedroom with
+                        attached bathroom on the second floor.
                     </p>
 
                 </div>
 
             </div>
+
 
         </div>
 
@@ -1032,6 +1106,7 @@
 
 
         <div class="pricing-grid">
+
 
             <div class="price-card featured">
 
@@ -1070,12 +1145,15 @@
 
             </div>
 
+
         </div>
 
         <p style="margin-top:25px;color:#777;font-size:13px;">
+
             * Construction cost may vary depending on design,
             specifications, materials, site conditions and
             customer requirements.
+
         </p>
 
     </div>
@@ -1105,16 +1183,25 @@
                 requirements.
             </p>
 
-            <div class="buttons" style="justify-content:center;">
 
-                <a href="tel:+919XXXXXXXXX"
-                   class="btn btn-gold">
-                    Call Us
+            <div class="contact-buttons">
+
+                <!-- CALL BUTTON -->
+
+                <a id="callButton"
+                   class="btn btn-gold"
+                   href="#">
+                    📞 Call Us
                 </a>
 
-                <a href="https://wa.me/91XXXXXXXXXX"
-                   class="btn btn-outline">
-                    WhatsApp Us
+
+                <!-- WHATSAPP BUTTON -->
+
+                <a id="whatsappButton"
+                   class="btn btn-outline"
+                   href="#"
+                   target="_blank">
+                    💬 WhatsApp Us
                 </a>
 
             </div>
@@ -1128,7 +1215,7 @@
                 </p>
 
                 <p>
-                    <strong>Service:</strong>
+                    <strong>Services:</strong>
                     House Construction • Villa Construction •
                     Renovation • Building Extension
                 </p>
@@ -1159,6 +1246,33 @@
     </p>
 
 </footer>
+
+
+<!-- ================= PHONE / WHATSAPP SETTINGS ================= -->
+
+<script>
+
+    const phoneNumber = "9659655906";
+
+    // Call button
+    const callButton = document.getElementById("callButton");
+    callButton.href = "tel:+91" + phoneNumber;
+
+    // WhatsApp button
+    const whatsappMessage =
+        "Hello Mahalingam Construction, I am interested in your construction services.";
+
+    const whatsappButton =
+        document.getElementById("whatsappButton");
+
+    whatsappButton.href =
+        "https://wa.me/91" +
+        phoneNumber +
+        "?text=" +
+        encodeURIComponent(whatsappMessage);
+</script>
+
+</script>
 
 
 </body>
