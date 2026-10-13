@@ -795,18 +795,168 @@
 
             border-radius: 14px;
 
-            padding: 26px;
-
+            padding: 0;
+            overflow: hidden;
+            cursor: pointer;
             transition: 0.25s ease;
         }
 
 
-        .project-card:hover {
+        .project-card:hover,
+        .project-card:focus-visible {
 
             transform: translateY(-4px);
+            border-color: var(--gold-light);
+            outline: 2px solid rgba(214,174,53,0.35);
+            outline-offset: 3px;
+        }
 
-            border-color:
-                rgba(214,174,53,0.35);
+        .project-image {
+            height: 210px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #182331, #0b1017);
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.04);
+        }
+
+        .project-status {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            background: var(--gold);
+            color: #080a0e;
+            font-size: 10px;
+            font-weight: 700;
+        }
+
+        .project-content {
+            padding: 23px;
+        }
+
+        .project-location {
+            color: var(--gold-light);
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            line-height: 1.6;
+        }
+
+        .project-card h3 {
+            margin-top: 10px;
+        }
+
+        .project-card p {
+            line-height: 1.7;
+        }
+
+        .view-photos {
+            display: inline-block;
+            margin-top: 13px;
+            color: var(--gold-light);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* PROJECT PHOTO GALLERY POPUP */
+        .gallery-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            padding: 22px;
+            overflow-y: auto;
+            background: rgba(0,0,0,0.88);
+        }
+
+        .gallery-modal.active {
+            display: block;
+        }
+
+        .gallery-box {
+            position: relative;
+            width: min(100%, 1000px);
+            margin: 25px auto;
+            padding: 32px;
+            border: 1px solid var(--gold);
+            border-radius: 14px;
+            background: #101720;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.5);
+        }
+
+        .gallery-close {
+            position: absolute;
+            top: 10px;
+            right: 17px;
+            border: 0;
+            background: transparent;
+            color: #fff;
+            font-size: 36px;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .gallery-box h2 {
+            max-width: 90%;
+            margin: 12px 35px 7px 0;
+            color: var(--gold-light);
+            font-family: "Playfair Display", serif;
+            font-size: clamp(25px, 4vw, 36px);
+            line-height: 1.25;
+        }
+
+        .gallery-description {
+            margin-bottom: 20px;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .gallery-photos {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .gallery-photos img {
+            display: block;
+            width: 100%;
+            height: 290px;
+            object-fit: cover;
+            border-radius: 8px;
+            background: #182331;
+        }
+
+        .gallery-contact {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .gallery-contact p {
+            margin-bottom: 10px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .gallery-contact .btn {
+            margin: 0 8px 8px 0;
+        }
+
+        body.gallery-open {
+            overflow: hidden;
         }
 
 
@@ -1620,68 +1770,78 @@
 
         <div class="projects-grid">
 
-
-            <div class="project-card">
-
-                <div class="project-number">
-                    PROJECT 01
+            <!-- PROJECT 01: ONDIPUDUR -->
+            <article class="project-card" onclick="openGallery('ondipudur')"
+                role="button" tabindex="0" aria-label="View Ondipudur project photos"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('ondipudur')}">
+                <div class="project-image">
+                    <img src="images/ondipudur-1.jpg" alt="3 BHK sengal brick construction at Ondipudur" loading="lazy">
+                    <span class="project-status">Ongoing Project</span>
                 </div>
-
-                <h3>
-                    3 BHK – Ondipudur
-                </h3>
-
-                <p>
-                    3 BHK residential project with
-                    Sengal brick construction.
-                </p>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-number">
-                    PROJECT 02
+                <div class="project-content">
+                    <div class="project-number">PROJECT 01</div>
+                    <span class="project-location">ONDIPUDUR, COIMBATORE</span>
+                    <h3>3 BHK – Ondipudur</h3>
+                    <p>3 BHK residential project with sengal brick construction.</p>
+                    <span class="view-photos">View Site Photos ↗</span>
                 </div>
+            </article>
 
-                <h3>
-                    3 BHK – Mahalakshmi Garden
-                </h3>
-
-                <p>
-                    Peedampalli, Coimbatore.
-                    1800 sq.ft residential project
-                    with hollow block construction.
-                </p>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-number">
-                    PROJECT 03
+            <!-- PROJECT 02: PEEDAMPALLI -->
+            <article class="project-card" onclick="openGallery('peedampalli')"
+                role="button" tabindex="0" aria-label="View Mahalakshmi Garden project photos"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('peedampalli')}">
+                <div class="project-image">
+                    <img src="images/peedampalli-1.jpg" alt="3 BHK hollow block construction at Mahalakshmi Garden, Peedampalli" loading="lazy">
+                    <span class="project-status">Ongoing Project</span>
                 </div>
+                <div class="project-content">
+                    <div class="project-number">PROJECT 02</div>
+                    <span class="project-location">MAHALAKSHMI GARDEN, PEEDAMPALLI</span>
+                    <h3>3 BHK – Mahalakshmi Garden</h3>
+                    <p>Peedampalli, Coimbatore. 1800 sq.ft residential project with hollow block construction.</p>
+                    <span class="view-photos">View Site Photos ↗</span>
+                </div>
+            </article>
 
-                <h3>
-                    Ramanathapuram
-                </h3>
-
-                <p>
-                    Building extension project with
-                    existing ground floor, 1 BHK on
-                    the first floor and bedroom with
-                    attached bathroom on the second floor.
-                </p>
-
-            </div>
+            <!-- PROJECT 03: RAMANATHAPURAM -->
+            <article class="project-card" onclick="openGallery('ramanathapuram')"
+                role="button" tabindex="0" aria-label="View Ramanathapuram extension project photos"
+                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery('ramanathapuram')}">
+                <div class="project-image">
+                    <img src="images/ramanathapuram-1.jpg" alt="Building extension project at Ramanathapuram, Coimbatore" loading="lazy">
+                    <span class="project-status">Ongoing Project</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-number">PROJECT 03</div>
+                    <span class="project-location">RAMANATHAPURAM, COIMBATORE</span>
+                    <h3>Building Extension – Ramanathapuram</h3>
+                    <p>Existing ground floor, 1 BHK on the first floor and bedroom with attached bathroom on the second floor.</p>
+                    <span class="view-photos">View Site Photos ↗</span>
+                </div>
+            </article>
 
         </div>
 
     </div>
 
 </section>
+
+<!-- PROJECT PHOTO GALLERY POPUP -->
+<div id="project-gallery" class="gallery-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="gallery-title">
+    <div class="gallery-box">
+        <button type="button" class="gallery-close" onclick="closeGallery()" aria-label="Close gallery">&times;</button>
+        <div class="section-label">MAHALINGAM CONSTRUCTION</div>
+        <h2 id="gallery-title">Project Photos</h2>
+        <p id="gallery-description" class="gallery-description"></p>
+        <div id="gallery-photos" class="gallery-photos"></div>
+        <div class="gallery-contact">
+            <p>Planning your own construction project?</p>
+            <a href="tel:9659655906" class="btn btn-gold">Call Us: 96596 55906</a>
+            <a href="https://wa.me/919659655906?text=Hello%20Mahalingam%20Construction%2C%20I%20am%20interested%20in%20your%20construction%20services." target="_blank" rel="noopener noreferrer" class="btn btn-outline">WhatsApp Us</a>
+        </div>
+    </div>
+</div>
 
 
 
@@ -1966,6 +2126,85 @@
 
 </footer>
 
+
+
+
+<!-- PROJECT GALLERY SCRIPT -->
+<script>
+const projectGalleries = {
+    ondipudur: {
+        title: "3 BHK – Ondipudur",
+        description: "Sengal Brick Construction",
+        photos: [
+            "images/ondipudur-1.jpg",
+            "images/ondipudur-2.jpg",
+            "images/ondipudur-3.jpg",
+            "images/ondipudur-4.jpg"
+        ]
+    },
+    peedampalli: {
+        title: "3 BHK – Mahalakshmi Garden, Peedampalli",
+        description: "1800 sq.ft | Hollow Block Construction",
+        photos: [
+            "images/peedampalli-1.jpg",
+            "images/peedampalli-2.jpg",
+            "images/peedampalli-3.jpg",
+            "images/peedampalli-4.jpg"
+        ]
+    },
+    ramanathapuram: {
+        title: "Building Extension – Ramanathapuram",
+        description: "Existing ground floor, first-floor 1 BHK and second-floor bedroom with attached bathroom",
+        photos: [
+            "images/ramanathapuram-1.jpg",
+            "images/ramanathapuram-2.jpg",
+            "images/ramanathapuram-3.jpg",
+            "images/ramanathapuram-4.jpg"
+        ]
+    }
+};
+
+function openGallery(projectId) {
+    const project = projectGalleries[projectId];
+    if (!project) return;
+
+    const modal = document.getElementById("project-gallery");
+    const galleryPhotos = document.getElementById("gallery-photos");
+    document.getElementById("gallery-title").textContent = project.title;
+    document.getElementById("gallery-description").textContent = project.description;
+    galleryPhotos.replaceChildren();
+
+    project.photos.forEach((src, index) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = project.title + " site photo " + (index + 1);
+        img.loading = "lazy";
+        img.onerror = function () { this.remove(); };
+        galleryPhotos.appendChild(img);
+    });
+
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("gallery-open");
+    modal.querySelector(".gallery-close").focus();
+}
+
+function closeGallery() {
+    const modal = document.getElementById("project-gallery");
+    if (!modal) return;
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("gallery-open");
+}
+
+document.getElementById("project-gallery").addEventListener("click", function (event) {
+    if (event.target === this) closeGallery();
+});
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") closeGallery();
+});
+</script>
 
 </body>
 
